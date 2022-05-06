@@ -1,0 +1,71 @@
+@use './sass' as *;
+
+@font-face {
+  font-family: 'Kharkiv';
+  src: url('./assets/fonts/Kharkiv-Tone.woff') format('woff'),
+       url('./assets/fonts/Kharkiv-Tone.ttf') format('truetype');;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html{
+  font-size: 100%;
+}
+
+body {
+  font-family: $font-family;
+  font-weight: 400;
+  line-height: 1;
+
+  background-color: $black;
+  color: $white;
+
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+
+button, input {
+  outline: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+iframe {
+  border: 0
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+
+  @include extra-large{
+    max-width: 980px;
+  }
+
+  @include large{
+    max-width: 640px;
+  }
+
+  @include small {
+    max-width: 480px;
+  }
+
+  @include extra-small {
+    max-width: 330px;
+  }
+}

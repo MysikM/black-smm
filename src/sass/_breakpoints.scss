@@ -1,0 +1,31 @@
+@use './variabless' as *;
+
+@mixin extra-small {
+  @media only screen and (max-width:$extraSmall-width) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media only screen and (max-width: $small-width ) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media only screen and (max-width: $medium-width) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (max-width: $large-width) {
+    @content;
+  }
+}
+
+@mixin extra-large {
+  @media only screen and (max-width: $extraLarge-width) {
+    @content;
+  }
+}

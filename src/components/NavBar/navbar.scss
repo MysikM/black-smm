@@ -1,0 +1,140 @@
+@use '../../sass' as *;
+
+.navigation {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: $white;
+  height: 5.5rem;
+  color: $black;
+
+  .home--navigation &{
+    height: auto;
+  }
+
+  @include large {
+    display: none;
+  }
+
+  &--container {
+    height: 5.5rem;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .home--navigation &{
+      flex-direction: column;
+      height: auto;
+      justify-content: center;
+    }
+
+    @include extra-large {
+      padding: 0 1.5rem;
+    }
+  }
+
+  &--logo {
+    font-size: $font-size-title;
+    line-height: $lh-title;
+    flex: 1 1 25%;
+
+    .home--navigation &{
+      margin-top: 30px;
+    }
+  }
+
+  &--links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex: 1 1 50%;
+
+    .home--navigation &{
+      margin-top: 40px;
+      flex-direction: column;
+    }
+  }
+
+  &--item{
+
+    .home--navigation & {
+      margin-top: 21px;
+    }
+
+    a {
+      font-family: $font-family-arial;
+      padding-right: 2rem;
+      font-size: $font-size-menu-item;
+      line-height: $lh-menu-item;
+      color: $color-menu;
+      transition: 0.5s;
+
+      .home--navigation & {
+        padding-right: 0;
+      }
+
+      @include extra-large {
+        padding-right: 1rem;
+      }
+
+      &:hover {
+        opacity: 0.5;
+      }
+
+    }
+
+    &:last-child {
+      a{
+        padding: 0;
+      }
+    }
+  }
+
+  &--contact {
+    flex: 1 1 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .home--navigation & {
+      margin-top: 65px;
+      flex-direction: column;
+    }
+  }
+
+  &--phone {
+    font-family: $font-family-arial;
+    font-size: $font-size-subtitle;
+    color: $color-menu;
+    padding: 2rem;
+    white-space: nowrap;
+
+    .home--navigation & {
+      margin-top: 10px;
+    }
+
+    @include extra-large {
+      padding: 0 1.25rem;
+    }
+  }
+
+  &--btn {
+    padding: 0.75rem 2rem;
+    background-color: $black;
+    color: rgba($white, 0.89);
+    border-radius: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+
+    .home--navigation & {
+      font-size: $font-size-subtitle;
+      padding: 0.75rem 2rem;
+      font-weight: $font-weight-menu-item;
+      margin-top: 30px;
+    }
+  }
+}

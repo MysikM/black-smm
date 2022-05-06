@@ -1,0 +1,18 @@
+@use '../../sass' as *;
+
+.home--navigation {
+  display: none;
+  @include large {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    &__active {
+      transition: opacity 1s ease;
+      height: 510px;
+      visibility: visible;
+      opacity: 1;
+    }
+    display: block;
+    position: relative;
+  }
+}

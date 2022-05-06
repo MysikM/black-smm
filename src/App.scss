@@ -49,6 +49,13 @@ iframe {
   border: 0
 }
 
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+  font-family: $font-family-arial;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;

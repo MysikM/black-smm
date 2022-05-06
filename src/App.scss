@@ -65,6 +65,10 @@ button {
   }
 
   @include large{
+    max-width: 960px;
+  }
+
+  @include medium{
     max-width: 640px;
   }
 

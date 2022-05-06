@@ -9,6 +9,7 @@
   background-color: $white;
   height: 5.5rem;
   color: $black;
+  z-index: 10;
 
   .home--navigation &{
     height: auto;

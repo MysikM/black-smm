@@ -1,0 +1,18 @@
+@use '../../sass/index' as *;
+
+.light-green {
+  color: $light-green;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.pink {
+  color: $pink;
+}
+
+.title {
+  font-size: $font-size-description;
+  font-weight: $font-weight-bold;
+}

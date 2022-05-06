@@ -4,7 +4,7 @@ import Burger from "../Burger/Burger";
 import Navbar from "../NavBar/Navbar";
 
 const MobileNavBar = () => {
-    const [openMenu, setOpenMenu] = useState(true);
+    const [openMenu, setOpenMenu] = useState(false);
 
     const menuHandler = () => setOpenMenu(!openMenu);
 

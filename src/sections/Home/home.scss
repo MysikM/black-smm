@@ -1,5 +1,163 @@
 @use '../../sass' as *;
 
+.home {
+  margin-top: 5.5rem;
+  @include large{
+    margin-top: 0;
+  }
+
+  &--container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+
+    @include extra-large {
+     gap: 3rem;
+    }
+
+    @include medium{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &--content {
+    display: flex;
+    flex-direction: column;
+
+    @include medium{
+      flex: 0;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &--title{
+    white-space: nowrap;
+    font-size: $font-size-title-home;
+    line-height: $lh-title-home;
+    font-weight: $font-weight-normal;
+
+    @include extra-large {
+      font-size: 70px;
+      line-height: 1;
+    }
+
+    @include medium{
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    @include extra-small {
+      font-size: 48px;
+    }
+  }
+
+  &--description{
+    margin-top: 4rem;
+    font-size: $font-size-subtitle;
+    line-height: $lh-title;
+
+    @include extra-large {
+      margin-top: 6.5rem;
+      line-height: 1.2;
+      font-size: 11px;
+    }
+    @include medium{
+      margin-top: 0;
+      text-align: center;
+    }
+  }
+
+  &--subtitle{
+    margin-top: 5px;
+    color: $light-green;
+    font-size: $font-size-subtitle;
+    line-height: $lh-title;
+
+    @include extra-large {
+      line-height: 1.2;
+      font-size: 11px;
+    }
+
+    @include medium{
+      margin-top: 0;
+      text-align: center;
+    }
+  }
+
+  &--services {
+    flex: 1 1 50%;
+
+    @include medium{
+      flex: 0;
+      height: 200px;
+      width: 100%;
+    }
+  }
+
+  &--services-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    gap: 5rem;
+
+    @include extra-large {
+      justify-content: flex-start;
+      row-gap: 4rem;
+    }
+
+    @include medium {
+      height: 200px;
+      align-self: center;
+      flex-direction: column;
+      align-items: center;
+      column-gap: 2rem;
+    }
+
+    @include small {
+      flex-direction: row;
+    }
+  }
+
+  &--service-item {
+    flex:0 0 calc(50% - 5rem);
+
+    @include extra-large {
+      flex:0 0 calc(50% - 3.5rem);
+    }
+
+    @include medium{
+      flex:1 1 33%;
+    }
+
+    p{
+      margin-top: 10px;
+      font-family: $font-family-arial;
+      font-size: $font-size-subtitle;
+      line-height: $lh-title;
+      white-space: nowrap;
+
+      @include extra-large {
+        line-height: 1.2;
+        font-size: 13px;
+      }
+
+      @include extra-small {
+        white-space: pre-wrap;
+      }
+    }
+  }
+}
+
 .home--navigation {
   display: none;
   @include large {

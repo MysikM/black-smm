@@ -8,6 +8,26 @@ import slider7 from '../assets/Images/slider7.jpg';
 import slider8 from '../assets/Images/slider8.jpg';
 import slider9 from '../assets/Images/slider9.jpg';
 
+import iconCase1 from '../assets/Images/case1.svg';
+import iconCase2 from '../assets/Images/case2.svg';
+import iconCase3 from '../assets/Images/case3.svg';
+import iconCase4 from '../assets/Images/case4.svg';
+import iconCase5 from '../assets/Images/case5.svg';
+import iconCase6 from '../assets/Images/case6.svg';
+import iconCase7 from '../assets/Images/case7.svg';
+import iconCase8 from '../assets/Images/case8.svg';
+import iconCase9 from '../assets/Images/case9.svg';
+
+import bgCase1 from '../assets/Images/case1.jpg';
+import bgCase2 from '../assets/Images/case2.jpg';
+import bgCase3 from '../assets/Images/case3.jpg';
+import bgCase4 from '../assets/Images/case4.jpg';
+import bgCase5 from '../assets/Images/case5.jpg';
+import bgCase6 from '../assets/Images/case6.jpg';
+import bgCase7 from '../assets/Images/case7.jpg';
+import bgCase8 from '../assets/Images/case8.jpg';
+import bgCase9 from '../assets/Images/case9.jpg';
+
 export const navigationLinks = [
     {path: '#service', title: 'Услуги'},
     {path: '#portfolio', title: 'Портфолио'},
@@ -48,4 +68,16 @@ export const portfolioImages = [
     {src: slider7, title: 'img7'},
     {src: slider8, title: 'img8'},
     {src: slider9, title: 'img9'},
+]
+
+export const caseItems = [
+    {title:'Ичня', description:'Ічнянський молочно- консервний комбінат: IMKK', bg:bgCase1, icon: iconCase1},
+    {title:'A-medical.pro', description:'Медицинский центр лечения проктологических заболеваний', bg:bgCase2, icon: iconCase2},
+    {title:'Anta medicare', description:'Международная фармацевтическая компания', bg:bgCase3, icon: iconCase3},
+    {title:'Cosmedix', description:'Профессиональный бренд средств по уходу за кожей', bg:bgCase4, icon: iconCase4},
+    {title:'Crutter', description:'Алмазные стоматологические боры украинского производства', bg:bgCase5, icon: iconCase5},
+    {title:'Институт Вен', description:'Клиника лечения варикоза', bg:bgCase6, icon: iconCase6},
+    {title:'GoodGame', description:'Современный игровой компьютерный клуб', bg:bgCase7, icon: iconCase7},
+    {title:'Iortho', description:'Стоматологический центр ортодонтии', bg:bgCase8, icon: iconCase8},
+    {title:'Авантаж Велс', description:'Разработка сайта для корпоративного инвестиционного фонда', bg:bgCase9, icon: iconCase9},
 ]

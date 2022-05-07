@@ -1,0 +1,60 @@
+@use '../../sass/index' as *;
+
+.case-list {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+
+  @include extra-large {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include small {
+    grid-template-columns: 1fr;
+  }
+}
+
+.all-case {
+  margin-top: 3rem;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-family;
+  font-size: $font-size-title;
+  line-height: $lh-title;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 1s;
+
+  @include extra-small {
+    font-size: $font-size-description;
+  }
+
+  &:hover {
+    background-color: rgba($white, 0.1);
+    color: $white;
+
+    span{
+      transform: scale(1.2);
+    }
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-family-arial;
+    font-weight: $font-weight-lite;
+    font-size: 16px;
+    background-color: $black;
+    color: $white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: 1s;
+
+  }
+}

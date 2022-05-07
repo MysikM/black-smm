@@ -1,0 +1,99 @@
+@use '../../sass/index' as *;
+
+.case-item {
+  height: 280px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 14px;
+
+  @include extra-large{
+    &:last-child {
+      grid-column: span 2;
+    }
+  }
+
+  @include small {
+    &:last-child {
+      grid-column: span 1;
+    }
+  }
+
+  &--container {
+    height: 100%;
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:hover {
+      .case-item{
+        &--title {
+          h5:after{
+            position: absolute;
+            content: '';
+            height: 2px;
+            bottom: 2px;
+            left: 0;
+            width: 100%;
+            background-color: $white;
+            opacity: 1;
+            transition: 1s;
+          }
+        }
+        &--icon {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  &--title {
+    display: flex;
+    align-items: center;
+    h5 {
+      position: relative;
+      margin-left: 1rem;
+      font-weight: $font-weight-normal;
+      font-size: $font-size-article;
+      line-height: $lh-article;
+
+      &:after {
+        position: absolute;
+        content: '';
+        opacity: 0;
+        transition: 0.5s ease;
+      }
+    }
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 14px;
+    }
+  }
+
+  &--description {
+    width: 58%;
+    font-family: $font-family-arial;
+    font-size: $font-size-subtitle;
+    line-height: $lh-subtitle;
+    opacity: 0.8;
+  }
+
+  &--icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+    width: 30px;
+    height: 30px;
+    right: 1rem;
+    font-family: $font-family-arial;
+    color: $black;
+    background-color: $white;
+    border-radius: 50%;
+    transition: 0.5s ease;
+  }
+}

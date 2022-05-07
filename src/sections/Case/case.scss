@@ -1,0 +1,9 @@
+@use '../../sass/index' as *;
+
+.case {
+  padding-bottom: 5rem;
+  &--container {
+    display: flex;
+    flex-direction: column;
+  }
+}

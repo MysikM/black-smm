@@ -1,18 +1,14 @@
 import React from 'react';
 import './service.scss';
 import ServicesList from "../../components/ServicesList/ServicesList";
+import TitleSection from "../../components/TitleSection/TitleSection";
 
 const Service = () => {
     return (
         <section className='service container'>
-            <div className='service--description'>
-                <h2 className='service--title'>
-                    Услуги
-                </h2>
-                <p className='service--subtitle'>
-                    От разработки стратегии до Production — наша команда знает, как повысить эффективность вашего продвижения.
-                </p>
-            </div>
+            <TitleSection
+                title='Услуги'
+                subtitle='От разработки стратегии до Production — наша команда знает, как повысить эффективность вашего продвижения.' />
             <ServicesList />
         </section>
     );

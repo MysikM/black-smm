@@ -4,6 +4,7 @@ import Portal from "./components/Portal/Portal";
 import CallMeModal from "./components/CallMeModal/CallMeModal";
 import Home from "./sections/Home/Home";
 import School from "./sections/School/School";
+import Service from "./sections/Service/Service";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
             <Navbar />
             <Home />
             <School />
+            <Service />
             <Portal>
                 <CallMeModal />
             </Portal>

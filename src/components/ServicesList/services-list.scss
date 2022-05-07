@@ -1,0 +1,38 @@
+@use '../../sass/index' as *;
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  margin-top: 2.5rem;
+
+  grid-template-areas:
+  "service1 service1 service2 service2"
+  "service3 service3 service4 service4"
+  "service5 service5 service6 service7"
+  "service8 service8 service9 service10";
+
+  @include extra-large {
+    grid-template-areas:
+  "service1 service1 service2 service2"
+  "service3 service3 service4 service4"
+  "service5 service5 service6 service6"
+  "service7 service7 service8 service8"
+  "service9 service9 service10 service10";
+  }
+
+  @include small {
+    grid-template-areas:
+  "service1 service1 service1 service1"
+  "service2 service2 service2 service2"
+  "service3 service3 service3 service3"
+  "service4 service4 service4 service4"
+  "service5 service5 service5 service5"
+  "service6 service6 service6 service6"
+  "service7 service7 service7 service7"
+  "service8 service8 service8 service8"
+  "service9 service9 service9 service9"
+  "service10 service10 service10 service10";
+  }
+
+}

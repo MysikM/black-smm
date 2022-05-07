@@ -28,6 +28,13 @@ import bgCase7 from '../assets/Images/case7.jpg';
 import bgCase8 from '../assets/Images/case8.jpg';
 import bgCase9 from '../assets/Images/case9.jpg';
 
+
+import logoTeam from '../assets/Images/teamLogo.webp';
+import team1 from '../assets/Images/team1.webp';
+import team2 from '../assets/Images/team2.webp';
+import team3 from '../assets/Images/team3.webp';
+import team4 from '../assets/Images/team4.webp';
+
 export const navigationLinks = [
     {path: '#service', title: 'Услуги'},
     {path: '#portfolio', title: 'Портфолио'},
@@ -80,4 +87,12 @@ export const caseItems = [
     {title:'GoodGame', description:'Современный игровой компьютерный клуб', bg:bgCase7, icon: iconCase7},
     {title:'Iortho', description:'Стоматологический центр ортодонтии', bg:bgCase8, icon: iconCase8},
     {title:'Авантаж Велс', description:'Разработка сайта для корпоративного инвестиционного фонда', bg:bgCase9, icon: iconCase9},
+]
+
+export const teamImg = [
+    {src: logoTeam, title:'logoTeam'},
+    {src: team1, title:'team1'},
+    {src: team2, title:'team2'},
+    {src: team3, title:'team3'},
+    {src: team4, title:'team4'},
 ]

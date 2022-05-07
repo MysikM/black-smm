@@ -7,6 +7,7 @@ import School from "./sections/School/School";
 import Service from "./sections/Service/Service";
 import Portfolio from "./sections/Portfolio/Portfolio";
 import Case from "./sections/Case/Case";
+import Team from "./sections/Team/Team";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
             <Service />
             <Portfolio />
             <Case />
+            <Team />
             <Portal>
                 <CallMeModal />
             </Portal>

@@ -8,6 +8,7 @@ import Service from "./sections/Service/Service";
 import Portfolio from "./sections/Portfolio/Portfolio";
 import Case from "./sections/Case/Case";
 import Team from "./sections/Team/Team";
+import Feedback from "./sections/Feedback/Feedback";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
             <Portfolio />
             <Case />
             <Team />
+            <Feedback />
             <Portal>
                 <CallMeModal />
             </Portal>

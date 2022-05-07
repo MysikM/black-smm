@@ -1,0 +1,117 @@
+@use '../../sass/index' as *;
+
+.feedback {
+  padding: 10rem 0;
+  @include medium {
+    padding: 7rem 0;
+  }
+  @include extra-small {
+    padding: 4rem 0;
+  }
+  &--container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2rem;
+
+    @include medium {
+      flex-direction: column;
+    }
+  }
+
+  &--text-container{
+    flex: 0 0 513px;
+    @include extra-large{
+      flex: 0 0 460px;
+    }
+    @include medium {
+      flex: 1;
+    }
+  }
+
+  &--title {
+    font-size: 105px;
+    font-weight: $font-weight-normal;
+    @include extra-large{
+      font-size: 94px;
+    }
+    @include extra-small {
+      font-size: 60px;
+    }
+  }
+
+  &--description {
+    margin-top: 3rem;
+    font-family: $font-family-arial;
+    font-size: $font-size-description;
+    line-height: $lh-description;
+    font-weight: $font-weight-lite;
+    opacity: 0.6;
+
+    @include extra-small {
+      margin-top: 1.5rem;
+      font-size: 15px;
+    }
+  }
+
+  &--form {
+    flex: 0 0 600px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include extra-large{
+      flex: 0 1 460px;
+    }
+    @include medium {
+      margin-top: 3rem;
+    }
+    @include extra-small {
+      flex: 0 1 350px;
+    }
+  }
+  &--btn {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    background-color: $white;
+    color: $black;
+    border-radius: 14px;
+    font-size: $font-size-title;
+    line-height: $lh-title;
+    font-family: $font-family;
+    cursor: pointer;
+    transition: 1s;
+
+    @include extra-small {
+      padding: 1.5rem;
+    }
+
+    &:hover {
+      background-color: rgba($white, 0.1);
+      color: $white;
+
+      span{
+        transform: scale(1.2);
+        background-color: $black;
+        color: $white;
+      }
+    }
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: $font-family-arial;
+      font-weight: $font-weight-lite;
+      font-size: 16px;
+      background-color: $black;
+      color: $white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      transition: 1s;
+    }
+
+  }
+}

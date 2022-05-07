@@ -1,0 +1,33 @@
+@use '../../sass/index' as *;
+
+.input {
+  position: relative;
+
+  &--title {
+    position: absolute;
+    color: $color-menu-active;
+    font-size: $font-size-menu-item;
+    left: 25px;
+    top: 21px;
+    transition: 0.5s;
+
+    &__active {
+      top: 10px;
+      font-size: 10px;
+    }
+  }
+
+  &--field{
+    width: 100%;
+    border: none;
+    background-color: $black;
+    color: $white;
+    border-bottom: 2px solid rgba($color-menu, 0.7);
+    padding: 26px 0 10px 32px;
+    font-size: $font-size-menu-item;
+
+    @include small{
+      width: 100%;
+    }
+  }
+}

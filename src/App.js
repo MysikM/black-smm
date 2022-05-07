@@ -5,6 +5,7 @@ import CallMeModal from "./components/CallMeModal/CallMeModal";
 import Home from "./sections/Home/Home";
 import School from "./sections/School/School";
 import Service from "./sections/Service/Service";
+import Portfolio from "./sections/Portfolio/Portfolio";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
             <Home />
             <School />
             <Service />
+            <Portfolio />
             <Portal>
                 <CallMeModal />
             </Portal>

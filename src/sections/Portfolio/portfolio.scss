@@ -1,0 +1,149 @@
+@use '../../sass/index' as *;
+
+.portfolio{
+  background-color: $white;
+  color: $black;
+
+  &--container {
+    padding: 7rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+
+    @include extra-large {
+      padding-top: 6rem;
+    }
+  }
+
+  &--title {
+    position: relative;
+    font-size: $font-size-title-article;
+    line-height: $lh-title-article;
+    font-weight: $font-weight-normal;
+    padding-left: 40px;
+    padding-bottom: 4rem;
+
+    &::after{
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: $underline;
+      bottom: 0;
+      left: 0;
+    }
+
+    @include extra-small {
+      font-size: 40px;
+      padding-left: 0;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &--images{
+    display: flex;
+    margin-top: 2rem;
+    padding: 0 1rem;
+    align-items: center;
+
+    img {
+      border-radius: 14px;
+
+      @include small{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        align-self: center;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &--description {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    @include medium{
+      flex-direction: column;
+    }
+
+    @include small{
+      align-items: center;
+    }
+  }
+
+  &--subtitle{
+    flex: 0 0 618px;
+
+    @include medium{
+      flex: 1;
+    }
+
+    @include small{
+      width: 440px;
+    }
+
+    @include extra-small{
+      width: 320px;
+    }
+
+    p{
+      margin: 35px auto 0;
+      font-size: $font-size-description;
+       line-height:$lh-title ;
+       font-family: $font-family-arial;
+       color: $color-portfolio-subtitle;
+    }
+  }
+
+  &--navigation {
+    flex: 0 0 300px;
+    padding: 0 1rem;
+
+    @include medium{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex: 1;
+    }
+
+    @include small{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      margin-top: 10px;
+      width: 300px;
+      background-color: $black;
+      color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.75rem 0;
+      border-radius: 14px;
+      font-family: $font-family;
+      font-size: $font-size-title;
+      line-height: $lh-title;
+      font-weight: $font-weight-normal;
+      cursor: pointer;
+      transition: 0.5s;
+
+      @include medium{
+        width: 280px;
+      }
+
+      @include small{
+        width: 300px;
+        margin-top: 3px;
+      }
+
+      &:hover{
+        opacity: 0.85;
+      }
+    }
+  }
+}

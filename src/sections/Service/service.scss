@@ -26,7 +26,8 @@
       left: 0;
       content: '';
       background-color: $underline;
-      height: 1px;
+      opacity: 0.5;
+      height: 2px;
       width: 100%;
     }
   }

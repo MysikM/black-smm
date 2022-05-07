@@ -1,3 +1,13 @@
+import slider1 from '../assets/Images/slider1.jpg';
+import slider2 from '../assets/Images/slider2.jpg';
+import slider3 from '../assets/Images/slider3.jpg';
+import slider4 from '../assets/Images/slider4.jpg';
+import slider5 from '../assets/Images/slider5.jpg';
+import slider6 from '../assets/Images/slider6.jpg';
+import slider7 from '../assets/Images/slider7.jpg';
+import slider8 from '../assets/Images/slider8.jpg';
+import slider9 from '../assets/Images/slider9.jpg';
+
 export const navigationLinks = [
     {path: '#service', title: 'Услуги'},
     {path: '#portfolio', title: 'Портфолио'},
@@ -26,4 +36,16 @@ export const services = [
     {num:'08', title:'Медицина', descriptions: ['Личный бренд врача', 'SMM для клиник', 'Привлечение пациентов']},
     {num:'09', title:'Консалтинг', descriptions: ['Аудит', 'Консультация', 'Обучение владельцев бизнеса']},
     {num:'10', title:'Контекстная реклама', descriptions: ['Аудит', 'Настройка рекламы']},
+]
+
+export const portfolioImages = [
+    {src: slider1, title: 'img1'},
+    {src: slider2, title: 'img2'},
+    {src: slider3, title: 'img3'},
+    {src: slider4, title: 'img4'},
+    {src: slider5, title: 'img5'},
+    {src: slider6, title: 'img6'},
+    {src: slider7, title: 'img7'},
+    {src: slider8, title: 'img8'},
+    {src: slider9, title: 'img9'},
 ]

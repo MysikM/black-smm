@@ -1,0 +1,123 @@
+@use '../../sass/index' as *;
+
+.contact-links--container {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  a {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: $black;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 40%);
+
+    &:hover {
+      span {
+        opacity: 0.8;
+        visibility: visible;
+      }
+    }
+
+    span {
+      position: absolute;
+      width: 85px;
+      padding: 0.4rem;
+      border-radius: 4px;
+      font-family: $font-family-arial;
+      left: -100px;
+      background-color: $black;
+      color: $white;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.2s;
+
+      &:after {
+        content: "";
+        display: block;
+        border-style: solid;
+        border-color: transparent;
+        border-left-color: $black;
+        position: absolute;
+        border-width: 12px;
+        border-right-width: 0;
+        margin: -12px 0 0;
+        left: auto;
+        right: -12px;
+        top: 50%;
+        bottom: auto;
+        transition: 0.2s;
+      }
+    }
+
+    &:nth-child(1) {
+      transition: all 0.3s ease-in-out;
+      transform: translate(0, -135%);
+    }
+
+    &:nth-child(2) {
+      transition: all 0.275s ease-in-out;
+      transform: translate(0,-255%);
+    }
+    &:nth-child(3) {
+      transition: all 0.25s ease-in-out;
+      transform: translate(0,-375%);
+    }
+    &:nth-child(4) {
+      transition: all 0.225s ease-in-out;
+      transform: translate(0,-495%);
+    }
+    &:nth-child(5) {
+      transition: all 0.2s ease-in-out;
+      transform: translate(0,-615%);
+    }
+  }
+}
+
+.main-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+  width: 60px;
+  height: 60px;
+  background: $white;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: contacts 5s ease 3s infinite;
+
+  &:hover {
+    animation: none !important;
+  }
+
+  svg {
+    color: $black;
+    width: 32px!important;
+    height: 32px!important;
+  }
+}
+
+.link-icon {
+
+}
+
+@keyframes contacts {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

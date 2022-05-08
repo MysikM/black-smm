@@ -11,6 +11,7 @@ import Team from "./sections/Team/Team";
 import Feedback from "./sections/Feedback/Feedback";
 import Contact from "./sections/Contact/Contact";
 import Footer from "./sections/Footer/Footer";
+import ContactLinks from "./components/ContactLinks/ContactLinks";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
             <Feedback />
             <Contact />
             <Footer />
+            <ContactLinks />
             <Portal>
                 <CallMeModal />
             </Portal>

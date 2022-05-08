@@ -1,0 +1,110 @@
+@use '../../sass/index' as *;
+
+.contact {
+  padding: 8rem 0;
+  background-color: $white;
+  color: $black;
+
+  @include small {
+    padding: 3rem 0;
+  }
+
+  &--container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--title {
+    padding-bottom: 2.5rem;
+    position: relative;
+    align-self: center;
+    font-size: $font-size-title-article;
+    line-height: $lh-title-article;
+    font-weight: $font-weight-normal;
+    text-align: center;
+
+    @include small {
+      font-size: 40px;
+    }
+
+    @include extra-small {
+      padding-bottom: 2.5rem;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $underline;
+    }
+  }
+
+  &--links {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include extra-large {
+      justify-content: center;
+    }
+
+    @include small {
+      margin-top: 2rem;
+    }
+
+    @include extra-small {
+      margin-top: 0;
+    }
+
+  }
+
+  &--link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include extra-large {
+      flex: 0 0 33%;
+      margin-top: 1rem;
+    }
+
+    @include medium {
+      margin-top: 2rem;
+    }
+
+    @include small {
+      flex: 0 0 50%;
+    }
+
+    @include extra-small {
+      flex: 100%;
+      margin-top: 3rem;
+    }
+
+    img {
+      height: 29px;
+
+      @include extra-small {
+        height: 35px;
+      }
+    }
+
+    span{
+      margin-top: 1rem;
+      font-family: $font-family-arial;
+      color: $color-contact-item;
+      font-size: $font-size-subtitle;
+      line-height: $lh-title;
+      font-weight: $font-weight-lite;
+      opacity: 0.8;
+
+      @include extra-small {
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -35,6 +35,12 @@ import team2 from '../assets/Images/team2.webp';
 import team3 from '../assets/Images/team3.webp';
 import team4 from '../assets/Images/team4.webp';
 
+import contactPhone from '../assets/Images/contact-phone.svg'
+import contactMail from '../assets/Images/contact-mail.svg'
+import contactHome from '../assets/Images/contact-home.svg'
+import contactFacebook from '../assets/Images/contact-facebook.svg'
+import contactInstagram from '../assets/Images/contact-instagram.svg'
+
 export const navigationLinks = [
     {path: '#service', title: 'Услуги'},
     {path: '#portfolio', title: 'Портфолио'},
@@ -95,4 +101,12 @@ export const teamImg = [
     {src: team2, title:'team2'},
     {src: team3, title:'team3'},
     {src: team4, title:'team4'},
+]
+
+export const contact = [
+    {icon: contactPhone , title: '+38 (095) 034 92 81', href:'tel:+380661019190'},
+    {icon: contactMail, title: 'helloblacksmm@gmail.com', href:'mailto:helloblacksmm@gmail.com'},
+    {icon: contactHome, title: 'Чайковская 27, Харьков', href:'https://www.google.com/maps/dir//%D1%83%D0%BB.+%D0%A7%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F,+27,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+61000/@50.0042422,36.2545876,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x4127a0c41805c87d:0x6a02b13576c5199a!2m2!1d36.2567763!2d50.0042422!3e0'},
+    {icon: contactFacebook, title: 'facebook.com/blacksmm', href:'https://www.facebook.com/black.smm.agency.kh/'},
+    {icon:  contactInstagram, title: 'instagram.com/blacksmm', href:'https://www.instagram.com/black_smm_/'},
 ]

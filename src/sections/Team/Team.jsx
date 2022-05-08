@@ -41,7 +41,7 @@ const Team = () => {
                         alt={'teamPhoto'} />
                     <motion.img
                         initial="hidden"
-                        animate="visible"
+                        whileInView="visible"
                         variants={imgAnimation1}
                         transition={{ ease: "linear", duration: 1, delay: 1 }}
                         src={teamImg1}
@@ -49,7 +49,7 @@ const Team = () => {
                     />
                     <motion.img
                         initial="hidden"
-                        animate="visible"
+                        whileInView="visible"
                         variants={imgAnimation2}
                         transition={{ ease: "linear", duration: 1, delay: 2 }}
                         src={teamImg2}
@@ -57,7 +57,7 @@ const Team = () => {
                     />
                     <motion.img
                         initial="hidden"
-                        animate="visible"
+                        whileInView="visible"
                         variants={imgAnimation3}
                         transition={{ ease: "linear", duration: 1, delay: 3 }}
                         src={teamImg3}
@@ -65,7 +65,7 @@ const Team = () => {
                     />
                     <motion.img
                         initial="hidden"
-                        animate="visible"
+                        whileInView="visible"
                         variants={imgAnimation4}
                         transition={{ ease: "linear", duration: 1, delay: 4 }}
                         src={teamImg4}

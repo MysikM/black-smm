@@ -28,7 +28,7 @@ const Feedback = () => {
                     <motion.h2
                         className='feedback--title'
                         initial="hidden"
-                        animate="visible"
+                        whileInView="visible"
                         variants={titleAnimation}
                         transition={{ duration: 2, delay: 1 }}
                     >
@@ -37,7 +37,7 @@ const Feedback = () => {
                     <motion.p
                         className='feedback--description'
                         initial="hidden"
-                        animate="visible"
+                        whileInView="visible"
                         variants={subtitleAnimation}
                         transition={{ duration: 1.5, delay: 1.2 }}
                     >
@@ -50,7 +50,7 @@ const Feedback = () => {
                 <motion.form
                     className='feedback--form'
                     initial="hidden"
-                    animate="visible"
+                    whileInView="visible"
                     variants={btnsAnimation}
                     transition={{ duration: 1.5, delay: 1.2 }}
                 >

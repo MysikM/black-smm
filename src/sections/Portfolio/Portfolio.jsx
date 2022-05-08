@@ -30,7 +30,7 @@ const Portfolio = () => {
             <div className="portfolio--container container">
                 <motion.h2
                     initial="hidden"
-                    animate="visible"
+                    whileInView="visible"
                     variants={titleAnimation}
                     transition={{ duration: 2, delay: 1 }}
                     className='portfolio--title'
@@ -80,7 +80,7 @@ const Portfolio = () => {
                 <div className='portfolio--description'>
                     <motion.div
                         initial="hidden"
-                        animate="visible"
+                        whileInView="visible"
                         variants={btnsAnimation}
                         transition={{ duration: 2, delay: 1 }}
                         className='portfolio--navigation'
@@ -90,7 +90,7 @@ const Portfolio = () => {
                     </motion.div>
                     <motion.div
                         initial="hidden"
-                        animate="visible"
+                        whileInView="visible"
                         variants={subtitleAnimation}
                         transition={{ duration: 2, delay: 1 }}
                         className='portfolio--subtitle'

@@ -3,7 +3,7 @@ import './contact-links.scss';
 import {IoChatbubbleEllipsesOutline, IoCloseOutline} from "react-icons/io5";
 
 const ContactLinks = () => {
-    const [isActive, setIsActive] = useState(true);
+    const [isActive, setIsActive] = useState(false);
 
     return (
         <div className='contact-links--container'>

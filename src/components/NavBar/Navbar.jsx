@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import './navbar.scss';
 import {navigationLinks} from "../../data/data";
 import { ModalStatusContext } from "../../context/modalContext.js";
+import {Link} from 'react-scroll';
 
 const Navbar = ({className}) => {
     const {setIsOpenModal} = useContext(ModalStatusContext);
@@ -15,7 +16,7 @@ const Navbar = ({className}) => {
                             const {path, title} = link
                             return (
                                 <li className='navigation--item' key={title}>
-                                    <a href={path}>{title}</a>
+                                    <Link to={path} spy={true} smooth={true} duration={500}>{title}</Link>
                                 </li>
                             )
                         })

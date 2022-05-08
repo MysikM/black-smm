@@ -42,11 +42,11 @@ import contactFacebook from '../assets/Images/contact-facebook.svg'
 import contactInstagram from '../assets/Images/contact-instagram.svg'
 
 export const navigationLinks = [
-    {path: '#service', title: 'Услуги'},
-    {path: '#portfolio', title: 'Портфолио'},
-    {path: '#case', title: 'Кейсы'},
-    {path: '#team', title: 'Команда'},
-    {path: '#contact', title: 'Контакты'},
+    {path: 'service', title: 'Услуги'},
+    {path: 'portfolio', title: 'Портфолио'},
+    {path: 'case', title: 'Кейсы'},
+    {path: 'team', title: 'Команда'},
+    {path: 'contact', title: 'Контакты'},
 ]
 
 export const homeDescription = [
@@ -112,10 +112,10 @@ export const contact = [
 ]
 
 export const footerLinks = [
-    {href:'#', title: 'Политика конфиденциальности'},
-    {href:'#', title: 'Услуги'},
-    {href:'#', title: 'Портфолио'},
-    {href:'#', title: 'Кейсы'},
-    {href:'#', title: 'Команда'},
-    {href:'#', title: 'Контакты'},
+    {href:'home', title: 'Политика конфиденциальности'},
+    {href:'service', title: 'Услуги'},
+    {href:'portfolio', title: 'Портфолио'},
+    {href:'case', title: 'Кейсы'},
+    {href:'team', title: 'Команда'},
+    {href:'contact', title: 'Контакты'},
 ]

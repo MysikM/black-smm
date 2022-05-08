@@ -9,6 +9,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import {Autoplay, Navigation} from "swiper";
+import {Element} from 'react-scroll';
+
 
 const Portfolio = () => {
     const titleAnimation = {
@@ -24,7 +26,7 @@ const Portfolio = () => {
         hidden: { opacity: 0, x: -100 },
     }
     return (
-        <section className='portfolio'>
+        <Element id='portfolio' className='portfolio'>
             <div className="portfolio--container container">
                 <motion.h2
                     initial="hidden"
@@ -101,7 +103,7 @@ const Portfolio = () => {
                 </div>
 
             </div>
-        </section>
+        </Element>
     );
 };
 

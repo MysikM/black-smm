@@ -4,10 +4,11 @@ import MobileNavBar from "../../components/MobileNavBar/MobileNavBar";
 import BackgroundVideo from "../../components/BackgroundVideo/BackgroundVideo";
 import {homeDescription} from "../../data/data";
 import TitleColor from "../../components/TitleColor/TitleColor";
+import {Element} from 'react-scroll';
 
 const Home = () => {
     return (
-        <div className='home'>
+        <Element id='home' className='home'>
             <MobileNavBar />
             <BackgroundVideo>
                 <div className='home--container container'>
@@ -35,7 +36,7 @@ const Home = () => {
                     </div>
                 </div>
             </BackgroundVideo>
-        </div>
+        </Element>
     );
 };
 

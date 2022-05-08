@@ -73,6 +73,7 @@
       line-height: $lh-menu-item;
       color: $color-menu;
       transition: 0.5s;
+      cursor: pointer;
 
       .home--navigation & {
         padding-right: 0;

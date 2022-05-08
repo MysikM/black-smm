@@ -1,6 +1,8 @@
 import React from 'react';
 import {motion} from "framer-motion";
 import './team.scss';
+import {Element} from 'react-scroll';
+
 
 import teamLogo from '../../assets/Images/teamLogo.webp';
 import teamImg1 from '../../assets/Images/team1.webp';
@@ -29,7 +31,7 @@ const Team = () => {
     }
 
     return (
-        <section className='team'>
+        <Element id='team' className='team'>
             <div className='team--container container'>
                 <div className='team--images'>
                     <motion.img
@@ -86,7 +88,7 @@ const Team = () => {
                     </button>
                 </div>
             </div>
-        </section>
+        </Element>
     );
 };
 

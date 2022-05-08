@@ -4,6 +4,7 @@ import {motion} from "framer-motion";
 import logo from'../../assets/Images/footerLogo.webp';
 import arrow from '../../assets/Images/arrow.svg';
 import {footerLinks} from "../../data/data";
+import {Link} from 'react-scroll';
 
 const Footer = () => {
     return (
@@ -19,15 +20,15 @@ const Footer = () => {
                         {
                             footerLinks.map((item,i ) => (
                                 <li className='footer--link' key={i}>
-                                    <a href={item.href}>{item.title}</a>
+                                    <Link to={item.href} spy={true} smooth={true} duration={500}>{item.title}</Link>
                                 </li>
                             ))
                         }
                     </ul>
                 </nav>
-                <button className='footer--btn-up'>
+                <Link to='home' spy={true} smooth={true} duration={500} className='footer--btn-up'>
                     <img src={arrow} alt='arrow-up'/>
-                </button>
+                </Link>
             </div>
         </footer>
     );

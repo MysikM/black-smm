@@ -1,10 +1,12 @@
 import React from 'react';
 import './contact.scss';
 import {contact} from "../../data/data";
+import {Element} from 'react-scroll';
+
 
 const Contact = () => {
     return (
-        <section className='contact'>
+        <Element id='contact' className='contact'>
             <div className='contact--container container'>
                 <h3 className='contact--title'>
                     С любовью к вашему бизнесу!
@@ -23,7 +25,7 @@ const Contact = () => {
                     }
                 </div>
             </div>
-        </section>
+        </Element>
     );
 };
 

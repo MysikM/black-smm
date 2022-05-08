@@ -3,6 +3,7 @@ import './navbar.scss';
 import {navigationLinks} from "../../data/data";
 import { ModalStatusContext } from "../../context/modalContext.js";
 import {Link} from 'react-scroll';
+import CallMeModal from "../CallMeModal/CallMeModal";
 
 const Navbar = ({className}) => {
     const {setIsOpenModal} = useContext(ModalStatusContext);
@@ -27,6 +28,7 @@ const Navbar = ({className}) => {
                     <button className='navigation--btn' onClick={() => setIsOpenModal(true)} >Перезвонить мне</button>
                 </div>
             </div>
+            <CallMeModal />
         </nav>
     );
 };

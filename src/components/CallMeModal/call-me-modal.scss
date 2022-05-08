@@ -31,6 +31,7 @@
     font-size: 2rem;
     transition: 0.5s;
     cursor: pointer;
+    color: $white;
 
     @include small{
       font-size: 1.5rem;

@@ -12,11 +12,13 @@ import Feedback from "./sections/Feedback/Feedback";
 import Contact from "./sections/Contact/Contact";
 import Footer from "./sections/Footer/Footer";
 import ContactLinks from "./components/ContactLinks/ContactLinks";
+import {useContext} from "react";
+import {ModalStatusContext} from "./context/modalContext";
 
 function App() {
-
+    const {isOpenModal} = useContext(ModalStatusContext);
   return (
-        <div className="App">
+        <div className="App" style={{overflowY :`${isOpenModal ? 'hidden' : 'auto'}`, height: `${isOpenModal ? '100vh' : 'auto'}`}}>
             <Navbar />
             <Home />
             <School />
@@ -28,9 +30,6 @@ function App() {
             <Contact />
             <Footer />
             <ContactLinks />
-            <Portal>
-                <CallMeModal />
-            </Portal>
         </div>
   );
 }

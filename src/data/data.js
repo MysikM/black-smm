@@ -110,3 +110,12 @@ export const contact = [
     {icon: contactFacebook, title: 'facebook.com/blacksmm', href:'https://www.facebook.com/black.smm.agency.kh/'},
     {icon:  contactInstagram, title: 'instagram.com/blacksmm', href:'https://www.instagram.com/black_smm_/'},
 ]
+
+export const footerLinks = [
+    {href:'#', title: 'Политика конфиденциальности'},
+    {href:'#', title: 'Услуги'},
+    {href:'#', title: 'Портфолио'},
+    {href:'#', title: 'Кейсы'},
+    {href:'#', title: 'Команда'},
+    {href:'#', title: 'Контакты'},
+]

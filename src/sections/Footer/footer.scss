@@ -1,0 +1,108 @@
+@use '../../sass/index' as *;
+
+.footer {
+  padding: 3rem 0;
+
+  @include extra-large {
+    padding: 1rem 0;
+  }
+
+  @include medium {
+    padding: 0;
+  }
+  &--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include extra-small {
+      flex-direction: column;
+      padding: 2rem 0;
+      position: relative;
+    }
+  }
+
+  &--logo{
+    width: 77px;
+    height: 78px;
+    flex: 0 0 77px;
+
+    @include extra-small {
+      position: absolute;
+      bottom: 1.7rem;
+    }
+  }
+  &--links-container{
+    flex: 1;
+
+    @include small {
+      flex: 0;
+    }
+  }
+  &--links{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    @include extra-large {
+      flex-wrap:wrap;
+      justify-content: space-evenly;
+    }
+    @include large {
+      justify-content: center;
+      align-items: center;
+    }
+    @include small {
+      padding: 1vw;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+  &--link{
+    padding: 1rem 2rem;
+    text-align: center;
+
+    a {
+      font-size: $font-size-subtitle;
+      color: $color-contact-item;
+      font-weight: $font-weight-normal;
+      white-space: nowrap;
+      transition: 1s;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    @include extra-large {
+      flex: 0 0 calc(33% - 3rem);
+      padding: 2rem 3rem;
+    }
+
+    @include large {
+      flex: 1 1 30%;
+      padding: 1.5rem 3rem;
+    }
+
+    @include small {
+      flex: 1 1 40%;
+      padding: 1rem 0;
+    }
+  }
+  &--btn-up{
+    cursor: pointer;
+    flex: 0 0 40px;
+    @include extra-small {
+      flex: 0 0 60px;
+      margin-top: 1.5rem;
+    }
+    img {
+      width: 40px;
+      height: 40px;
+      transform: rotate(-90deg);
+      @include extra-small {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}
